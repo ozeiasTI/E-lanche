@@ -1,3 +1,41 @@
+npx create-expo-app E-lanche--template blank
+cd E-lanche
+_____________________________________________________________
+# Navegação
+npx expo install react-native-screens react-native-safe-area-context
+npm install @react-navigation/native @react-navigation/native-stack
+
+# Câmera
+npx expo install expo-camera
+
+# Banco de dados
+npx expo install expo-sqlite
+
+# Picker
+npm install @react-native-picker/picker
+
+# Compartilhamento
+npx expo install expo-sharing
+
+# Sistema de arquivos
+npx expo install expo-file-system
+
+# Base64
+npm install base-64
+
+# PDF
+npm install pdf-lib
+
+# Document Picker
+npx expo install expo-document-picker
+
+# Excel
+npm install xlsx
+
+______________________________________________________________________________
+
+App.js: 
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert, FlatList, Platform } from 'react-native';
 import { NavigationContainer, useFocusEffect } from '@react-navigation/native';
@@ -575,3 +613,8 @@ feedbackText: {
 
 });
 
+___________________________________________________________________
+npx expo start --tunnel
+eas login
+eas build:configure
+eas build -p android --profile preview

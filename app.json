@@ -1,29 +1,31 @@
 {
   "expo": {
     "name": "E-lanche",
-    "slug": "E-lanche",
-    "version": "1.0.0",
-    "orientation": "portrait",
+    "slug": "e-lanche-2025",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "version": "1.0.0",
+    "sdkVersion": "53.0.0",
     "android": {
+      "package": "com.prof_ozeias.elanche2025",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "e4a35a67-c06f-432d-ab31-6ce47166aa8a"
+      }
     }
   }
 }
